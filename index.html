@@ -1,103 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Moza Dwi Maheswari</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
     <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
 </head>
 <body class="bg-background text-foreground">
-    <header class="sticky top-0 z-50 flex flex-wrap justify-between items-center p-6" style="background-color: #B6AFFF;">
-        <div class="flex flex-col">
-            <h1 class="text-3xl font-bold font-Sulphur Point">
-                <div class="text-3xl">MY</div>
-                PORTFOLIO
-            </h1>
+  <header class="sticky top-0 z-50 bg-[#B6AFFF] shadow-md">
+    <div class="flex justify-between items-center p-4">
+        <div class="text-3xl font-bold">
+            MY PORTFOLIO
         </div>
-        <nav id="nav-menu" class="hidden sm:flex sm:space-x-4">
-            <ul class="flex flex-wrap space-x-4">
-                <li><a href="#home" class="text-muted hover:text-muted-foreground font-poppins font-bold text-base">Home</a></li>
-                <li><a href="#about" class="text-muted hover:text-muted-foreground font-poppins font-bold text-base">About</a></li>
-                <li><a href="#skills" class="text-muted hover:text-muted-foreground font-poppins font-bold text-base">Skills</a></li>
-                <li><a href="#projects" class="text-muted hover:text-muted-foreground font-poppins font-bold text-base">Projects</a></li>
-                <li><a href="#contact" class="text-muted hover:text-muted-foreground font-poppins font-bold text-base">Contact</a></li>
-            </ul>
+
+        <!-- Hamburger Icon -->
+        <button id="menu-toggle" class="sm:hidden text-white focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <!-- Navigation Links -->
+        <nav id="nav-menu" class="hidden sm:flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 sm:items-center">
+            <a href="#home" class="text-base font-bold text-muted hover:text-blue-600">Home</a>
+            <a href="#about" class="text-base font-bold text-muted hover:text-blue-600">About</a>
+            <a href="#skills" class="text-base font-bold text-muted hover:text-blue-600">Skills</a>
+            <a href="#projects" class="text-base font-bold text-muted hover:text-blue-600">Projects</a>
+            <a href="#contact" class="text-base font-bold text-muted hover:text-blue-600">Contact</a>
         </nav>
-    </header>
+    </div>
+</header>
     <section id="home" class="flex flex-col items-center justify-center min-h-[70vh] text-center px-4 fade-in" style="background-color: #B6AFFF;">
         <div class="flex items-center justify-center gap-4 bg-white p-16 rounded-lg shadow-xl w-full max-w-7xl -mt-20">
-            <div class="text-left">
-                <h2 class="text-5xl font-bold">Hi There</h2>
-                <h3 class="text-4xl font-semibold mt-4">I'm <span class="text-blue-600">Moza Dwi Maheswari</span></h3>
-                <p class="text-2xl mt-4">Front-End Developer</p>
-            </div>
-            <img src="Picture/user_work.png" alt="Woman" class="h-64 w-64" />
+          <div class="text-left fade-in-left">
+            <h2 class="text-5xl font-bold">Hi There</h2>
+            <h3 class="text-4xl font-semibold mt-4">I'm <span class="text-blue-600">Moza Dwi Maheswari</span></h3>
+            <p class="text-2xl mt-4">Front-End Developer</p>
         </div>
+        <img src="Picture/user_work.png" alt="Woman" class="h-auto w-full max-w-[300px] object-cover" loading="lazy" />
+        <meta name="description" content="Moza Dwi Maheswari - Front-End Developer Portfolio showcasing skills, projects, and contact information.">
+                </div>
     </section>
-    <section id="about" class="py-20 px-6" style="background-color: #B6AFFF;">
-        <div class="flex items-center justify-center gap-4 bg-white p-16 rounded-lg shadow-xl w-full max-w-7xl">
-            <img src="Picture/user.png" alt="Woman" class="h-48 w-48 mr-4 rounded-full border-2 border-black" />
-            <div>
-                <h2 class="text-4xl font-bold">ABOUT ME</h2>
-                <p class="mt-4 text-muted-foreground text-lg text-justify max-w-md">
-                    I'm a skilled Front-End Developer with 2 years of experience and a 
-                    graduate in informatics Engineering from Diponegoro University. I 
-                    have hands-on experience in web development, proficient in HTML, 
-                    CSS, JavaScript, and frameworks like React and Vue.js. My focus is on 
-                    creating responsive user interfaces and optimizing user experiences.
-                </p>
-            </div>
+    <section id="about" class="py-20 px-6 relative bg-[#B6AFFF]">
+      <div class="relative bg-white p-16 rounded-lg shadow-xl w-full max-w-7xl mx-auto">
+          <!-- Tulisan "ABOUT ME" -->
+          <h2 class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl font-bold text-center text-white bg-[#6b46c1] px-6 py-2 rounded-lg shadow-lg">
+              ABOUT ME
+          </h2>
+          <div class="flex flex-col items-center gap-4">
+              <img src="Picture/user.png" alt="Woman" class="h-48 w-48 rounded-full border-2 border-black" />
+              <div class="text-center">
+                  <p class="mt-4 text-muted-foreground text-lg text-justify max-w-md">
+                      I'm a skilled Front-End Developer with 2 years of experience and a 
+                      graduate in Informatics Engineering from Diponegoro University. I 
+                      have hands-on experience in web development, proficient in HTML, 
+                      CSS, JavaScript, and frameworks like React and Vue.js. My focus is on 
+                      creating responsive user interfaces and optimizing user experiences.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section id="skills" class="py-10 px-4 bg-[#B6AFFF] relative">
+    <div class="relative bg-white p-8 sm:p-12 rounded-lg shadow-xl w-full max-w-7xl mx-auto">
+        <!-- Tulisan "SKILLS" -->
+        <h2 class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl sm:text-4xl font-bold text-center text-white bg-[#6b46c1] px-4 py-2 rounded-lg shadow-lg">
+            SKILLS
+        </h2>
+        <!-- Grid Gambar Skills -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 mt-10 justify-items-center">
+            <img src="Skill/HTML.png" alt="HTML" class="w-full max-w-[80px] h-auto object-contain" />
+            <img src="Skill/CSS.png" alt="CSS" class="w-full max-w-[80px] h-auto object-contain" />
+            <img src="Skill/Javascript.png" alt="JavaScript" class="w-full max-w-[80px] h-auto object-contain" />
+            <img src="Skill/Tailwind.png" alt="Tailwind CSS" class="w-full max-w-[80px] h-auto object-contain" />
+            <img src="Skill/github.png" alt="GitHub" class="w-full max-w-[80px] h-auto object-contain" />
+            <img src="Skill/Adobe ilustrator.png" alt="Adobe Illustrator" class="w-full max-w-[80px] h-auto object-contain" />
+            <img src="Skill/Adobe photoshop.png" alt="Adobe Photoshop" class="w-full max-w-[80px] h-auto object-contain" />
+            <img src="Skill/Figma.png" alt="Figma" class="w-full max-w-[80px] h-auto object-contain" />
         </div>
-    </section>
-    <section id="skills" class="py-10 px-4 bg-[#B6AFFF]">
-        <div class="flex items-center justify-center gap-4 bg-white p-16 rounded-lg shadow-xl w-full max-w-7xl">
-            <h2 class="text-3xl font-bold text-center">SKILLS</h2>
-            <div class="flex flex-wrap justify-center space-x-4 mt-4">
-                <img src="Skill/Adobe ilustrator.png" alt="Adobe Illustrator" class="h-10 project-card" />
-                <img src="Skill/Tailwind.png" alt="Tailwind CSS" class="h-10 project-card" />
-                <img src="Skill/Bootstrap.png" alt="Bootstrap" class="h-10 project-card" />
-                <img src="Skill/github.png" alt="GitHub" class="h-10 project-card" />
-                <img src="Skill/HTML.png" alt="HTML" class="h-10 project-card" />
-                <img src="Skill/Javascript.png" alt="JavaScript" class="h-10 project-card" />
-                <img src="Skill/Adobe photoshop.png" alt="Photoshop" class="h-10 project-card" />
-                <img src="Skill/Figma.png" alt="Figma" class="h-10 project-card" />
-                <img src="Skill/Visual studio code.png" alt="Visual Studio" class="h-10 project-card" />
-                <img src="Skill/CSS.png" alt="CSS" class="h-10 project-card" />
-            </div>
+    </div>
+</section>
+
+  <section id="projects" class="py-20 px-4 relative bg-[#B6AFFF]">
+    <div class="relative bg-white p-16 rounded-lg shadow-xl w-full max-w-7xl mx-auto">
+        <!-- Tulisan "PROJECTS" -->
+        <h2 class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl font-bold text-center text-white bg-[#6b46c1] px-6 py-2 rounded-lg shadow-lg">
+            PROJECTS
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
+            <img src="Picture/Project 1.jpg" alt="Project 1" class="rounded-lg w-full h-auto project-card" />
+            <img src="Picture/Project 2.jpg" alt="Project 2" class="rounded-lg w-full h-auto project-card" />
+            <img src="Picture/Project 3.jpg" alt="Project 3" class="rounded-lg w-full h-auto project-card" />
+            <img src="Picture/Project 4.jpg" alt="Project 4" class="rounded-lg w-full h-auto project-card" />
+            <img src="Picture/Project 5.jpeg" alt="Project 5" class="rounded-lg w-full h-auto project-card" />
+            <img src="Picture/Project 6.jpeg" alt="Project 6" class="rounded-lg w-full h-auto project-card" />
         </div>
-    </section>
-    <section id="projects" class="py-20 px-4 fade-in" style="background-color: #B6AFFF;">
-        <div class="flex flex-col items-center justify-center gap-4 bg-white p-16 rounded-lg shadow-xl w-full max-w-7xl -mt-20">
-            <h2 class="text-4xl font-bold text-center">PROJECTS</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-                <img src="Picture/Project 1.jpg" alt="Project 1" class="rounded-lg w-full h-auto project-card" />
-                <img src="Picture/Project 2.jpg" alt="Project 2" class="rounded-lg w-full h-auto project-card" />
-                <img src="Picture/Project 3.jpg" alt="Project 3" class="rounded-lg w-full h-auto project-card" />
-                <img src="Picture/Project 4.jpg" alt="Project 4" class="rounded-lg w-full h-auto project-card" />
-                <img src="Picture/Project 5.jpeg" alt="Project 5" class="rounded-lg w-full h-auto project-card" />
-                <img src="Picture/Project 6.jpeg" alt="Project 6" class="rounded-lg w-full h-auto project-card" />
-            </div>
-        </div>
-    </section>
-    <footer id="contact" class="py-6 bg-white text-center fade-in">
-        <div class="flex justify-center space-x-4 mt-2">
-            <a href="#" class="text-muted hover:text-muted-foreground">
-                <img src="Sosmed/vs 2.png" alt="LinkedIn" class="h-6 w-6">
-            </a>
-            <a href="#" class="text-muted hover:text-muted-foreground">
-                <img src="Sosmed/vs 1.png" alt="Discord" class="h-6 w-6">
-            </a>
-            <a href="#" class="text-muted hover:text-muted-foreground">
-                <img src="Sosmed/vs 4.png" alt="Instagram" class="h-7 w-7">
-            </a>
-            <a href="#" class="text-muted hover:text-muted-foreground">
-                <img src="Sosmed/vs 3.png" alt="WhatsApp" class="h-6 w-6">
-            </a>
-        </div>
-        <p class="text-lg">© 2024 Moza Dwi Maheswari. All Rights Reserved</p>
-    </footer>
-    <script src="scripts.js"></script>
+    </div>
+</section>
+
+<footer id="contact" class="py-6 bg-[#f8f9fa] text-center">
+  <div class="container mx-auto px-4">
+    <!-- Social Media Links -->
+    <div class="flex flex-wrap justify-center gap-4 items-center mb-4">
+      <a href="#" class="transition-transform hover:scale-110">
+        <img src="Sosmed/vs 2.png" alt="LinkedIn" class="w-10 h-10 sm:w-12 sm:h-12 object-contain" />
+      </a>
+      <a href="#" class="transition-transform hover:scale-110">
+        <img src="Sosmed/vs 1.png" alt="Discord" class="w-10 h-10 sm:w-12 sm:h-12 object-contain" />
+      </a>
+      <a href="#" class="transition-transform hover:scale-110">
+        <img src="Sosmed/vs 4.png" alt="Instagram" class="w-10 h-10 sm:w-12 sm:h-12 object-contain" />
+      </a>
+      <a href="#" class="transition-transform hover:scale-110">
+        <img src="Sosmed/vs 3.png" alt="WhatsApp" class="w-10 h-10 sm:w-12 sm:h-12 object-contain" />
+      </a>
+    </div>
+    <!-- Copyright Text -->
+    <p class="text-sm text-muted-foreground mt-2">
+      © 2024 Moza Dwi Maheswari. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+  <script src="scripts.js"></script>
     <div id="progress-bar" class="fixed top-0 left-0 h-1 bg-blue-500 z-50"></div>
 </body>
 </html>

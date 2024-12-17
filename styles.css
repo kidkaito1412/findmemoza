@@ -103,3 +103,229 @@ footer a:hover img {
   transform: scale(1.2);
   opacity: 0.8;
 }
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.fade-in-left {
+  animation: fadeInLeft 1s ease-out;
+}
+.fade-in-right {
+  animation: fadeInRight 1s ease-out;
+}
+
+#modal-img {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@media (max-width: 768px) {
+  section {
+      padding: 60px 10px;
+  }
+
+  h2 {
+      font-size: 1.8rem;
+  }
+}
+
+#skills h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: #6b46c1; /* Warna ungu */
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+#skills h2:hover {
+  transform: scale(1.05);
+  background-color: #543298; /* Warna ungu lebih tua saat hover */
+}
+
+/* Gaya untuk Judul Section */
+section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: #6b46c1; /* Warna ungu */
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+section h2:hover {
+  transform: scale(1.05);
+  background-color: #543298; /* Warna ungu lebih tua saat hover */
+}
+
+/* Margin atas untuk grid atau konten agar tidak tertutup judul */
+section .mt-10 {
+  margin-top: 3rem; /* Beri jarak antara judul dan konten */
+}
+
+/* Atur responsivitas untuk layar yang lebih kecil dari 768px (tablet dan smartphone) */
+@media (max-width: 768px) {
+  header {
+      padding: 10px; /* Perkecil padding pada header */
+  }
+
+  h2, h3 {
+      font-size: 1.5rem; /* Perkecil ukuran heading */
+  }
+
+  section {
+      padding: 40px 10px; /* Kurangi padding section */
+  }
+
+  .flex, .grid {
+      flex-direction: column; /* Susun elemen vertikal pada layar kecil */
+      gap: 20px; /* Jarak antar elemen */
+  }
+
+  .project-card, img {
+      width: 100%; /* Pastikan gambar memenuhi lebar layar */
+      height: auto; /* Otomatis sesuaikan tinggi */
+  }
+
+  .rounded-lg {
+      border-radius: 8px; /* Kurangi radius agar terlihat rapi di layar kecil */
+  }
+}
+
+/* Atur responsivitas untuk layar yang lebih kecil dari 480px (smartphone kecil) */
+@media (max-width: 480px) {
+  h2, h3 {
+      font-size: 1.2rem; /* Perkecil heading lebih lanjut untuk smartphone kecil */
+  }
+
+  .flex, .grid {
+      gap: 10px; /* Kurangi jarak antar elemen */
+  }
+
+  .p-16 {
+      padding: 10px; /* Kurangi padding container */
+  }
+
+  .mt-10 {
+      margin-top: 1.5rem; /* Kurangi margin atas */
+  }
+}
+
+.skill-icon {
+    height: 60px; /* Ukuran gambar */
+    transition: transform 0.3s, box-shadow 0.3s; /* Efek transisi */
+}
+
+.skill-icon:hover {
+    transform: scale(1.1); /* Membesarkan gambar saat hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan */
+}
+
+/* Further adjust the padding of the home section */
+#home {
+    padding-bottom: 0px; /* 10 times closer to the bottom */
+}
+
+/* Further adjust the margin of the about section */
+#about {
+    margin-top: 0px; /* 10 times closer to the top */
+}
+/* Gambar Responsif */
+
+/* Style untuk footer */
+footer {
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+/* Ikon sosial media */
+footer a img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+footer a:hover img {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+footer .flex {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Memberikan jarak antar ikon */
+  flex-wrap: wrap; /* Agar ikon bisa pindah baris ketika terlalu kecil */
+  margin-bottom: 1rem; /* Memberikan jarak antara ikon sosial dan teks copyright */
+}
+
+/* Ukuran ikon sosial media */
+footer a img {
+  width: 30px;
+  height: 30px;
+}
+
+footer .text-sm {
+  font-size: 0.875rem; /* Mengubah ukuran font agar lebih kecil di mobile */
+}
+
+/* Responsif untuk layar lebih kecil dari 768px (tablet dan smartphone) */
+@media (max-width: 768px) {
+  footer {
+    padding: 1.5rem 1rem; /* Mengurangi padding footer */
+  }
+
+  footer .flex {
+    gap: 0.8rem; /* Mengurangi jarak antar ikon */
+  }
+
+  footer a img {
+    width: 24px; /* Ukuran ikon lebih kecil */
+    height: 24px; /* Ukuran ikon lebih kecil */
+  }
+
+  footer .text-sm {
+    font-size: 0.75rem; /* Ukuran font copyright lebih kecil */
+  }
+}
+
+/* Responsif untuk layar lebih kecil dari 480px (smartphone kecil) */
+@media (max-width: 480px) {
+  footer {
+    padding: 1rem; /* Mengurangi padding footer */
+  }
+
+  footer .flex {
+    gap: 0.5rem; /* Mengurangi jarak antar ikon */
+    justify-content: center; /* Menjaga ikon tetap terpusat */
+  }
+
+  footer a img {
+    width: 20px; /* Ukuran ikon lebih kecil */
+    height: 20px; /* Ukuran ikon lebih kecil */
+  }
+
+  footer .text-sm {
+    font-size: 0.65rem; /* Ukuran font copyright lebih kecil */
+  }
+}
