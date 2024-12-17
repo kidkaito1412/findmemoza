@@ -10,7 +10,8 @@
   <body class="bg-background text-foreground">
     <header class="sticky top-0 z-50 flex flex-wrap justify-between items-center p-6 bg-purple-200">
       <h1 class="text-3xl font-bold font-Sulphur Point">MY PORTFOLIO</h1>
-      <nav>
+      <button id="menu-toggle" class="sm:hidden block text-2xl font-bold">☰</button>
+      <nav id="nav-menu" class="hidden sm:flex sm:space-x-4">
         <ul class="flex flex-wrap space-x-4">
           <li><a href="#home" class="text-muted hover:text-muted-foreground font-poppins font-bold text-base">Home</a></li>
           <li><a href="#about" class="text-muted hover:text-muted-foreground font-poppins font-bold text-base">About</a></li>
@@ -20,7 +21,7 @@
         </ul>
       </nav>
     </header>
-    <section id="home" class="flex flex-col items-center justify-center h-screen text-center px-4 bg-white">
+        <section id="home" class="flex flex-col items-center justify-center h-screen text-center px-4 bg-white fade-in">
       <div class="flex items-center">
         <div>
           <h2 class="text-5xl font-bold">Hi There</h2>
@@ -33,7 +34,7 @@
       </div>
       <button class="mt-4 bg-secondary text-secondary-foreground hover:bg-secondary/80 px-6 py-3 rounded">Swipe Up</button>
     </section>
-    <section id="about" class="py-20 px-6 bg-purple-100">
+    <section id="about" class="py-20 px-6 bg-purple-100 fade-in">
       <div class="flex items-center justify-center">
         <img src="Picture/user.png" alt="Woman" class="h-48 w-48 mr-4" />
         <div>
@@ -45,7 +46,7 @@
         </div>
       </div>
     </section>
-    <section id="skills" class="py-20 px-6 bg-purple-200">
+    <section id="skills" class="py-20 px-6 bg-purple-200 fade-in">
       <h2 class="text-4xl font-bold text-center">SKILLS</h2>
       <div class="flex flex-wrap justify-center space-x-4 mt-4">
         <img src="Skill/Adobe ilustrator.png" alt="Adobe Illustrator" class="h-12" />
@@ -60,16 +61,18 @@
         <img src="Skill/CSS.png" alt="CSS" class="h-12" />
       </div>
     </section>
-    <section id="projects" class="py-20 px-6 bg-purple-100">
+    <section id="projects" class="py-20 px-6 bg-purple-100 fade-in">
       <h2 class="text-4xl font-bold text-center">PROJECTS</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-        <img src="Picture/Classified App - Mobile UI.jpg" alt="Project 1" class="rounded-lg w-full h-auto" />
-        <img src="Picture/E-Learning App I Ofspace.jpg" alt="Project 2" class="rounded-lg w-full h-auto" />
-        <img src="Picture/Travel App Exploration.jpg" alt="Project 3" class="rounded-lg w-full h-auto" />
-        <img src="Picture/Travel App.jpg" alt="Project 4" class="rounded-lg w-full h-auto" />
+        <img src="Picture/Project 1.jpg" alt="Project 1" class="rounded-lg w-full h-auto project-card" />
+        <img src="Picture/Project 2.jpg" alt="Project 2" class="rounded-lg w-full h-auto project-card" />
+        <img src="Picture/Project 3.jpg" alt="Project 3" class="rounded-lg w-full h-auto project-card" />
+        <img src="Picture/Project 4.jpg" alt="Project 4" class="rounded-lg w-full h-auto project-card" />
+        <img src="Picture/Project 5.jpeg" alt="Project 5" class="rounded-lg w-full h-auto project-card" />
+        <img src="Picture/Project 6.jpeg" alt="Project 6" class="rounded-lg w-full h-auto project-card" />
       </div>
     </section>
-    <footer id="contact" class="py-6 bg-purple-200 text-center">
+    <footer id="contact" class="py-6 bg-purple-200 text-center fade-in">
       <div class="flex justify-center space-x-4 mt-2">
         <a href="#" class="text-muted hover:text-muted-foreground">
           <img src="Sosmed/vs 2.png" alt="LinkedIn" class="h-6 w-6">
@@ -87,5 +90,6 @@
       <p class="text-lg">© 2024 Moza Dwi Maheswari. All Rights Reserved</p>
     </footer>
     <script src="scripts.js"></script>
+    <div id="progress-bar" class="fixed top-0 left-0 h-1 bg-blue-500 z-50"></div>
   </body>
 </html>

@@ -52,3 +52,54 @@
 .mr-4 {
   margin-right: 1rem;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+button {
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+button:hover {
+  transform: scale(1.05);
+  background-color: #6b46c1; /* Warna ungu lebih gelap */
+  color: #fff;
+}
+
+nav a {
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+nav a:hover {
+  color: #6b46c1; /* Warna hover */
+  transform: scale(1.1);
+}
+
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+#progress-bar {
+  width: 0;
+  transition: width 0.2s ease;
+}
+footer a img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+footer a:hover img {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
