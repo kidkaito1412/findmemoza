@@ -96,13 +96,6 @@ nav a:hover {
   width: 0;
   transition: width 0.2s ease;
 }
-footer a img {
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-footer a:hover img {
-  transform: scale(1.2);
-  opacity: 0.8;
-}
 
 @keyframes fadeInLeft {
   from {
@@ -252,80 +245,39 @@ section .mt-10 {
 #about {
     margin-top: 0px; /* 10 times closer to the top */
 }
-/* Gambar Responsif */
 
-/* Style untuk footer */
-footer {
-  padding: 2rem 1rem;
-  background-color: #ffffff;
-  text-align: center;
-}
-
-/* Ikon sosial media */
-footer a img {
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-footer a:hover img {
-  transform: scale(1.2);
-  opacity: 0.8;
-}
-
+/* Atur responsivitas untuk footer */
 footer .flex {
-  display: flex;
-  justify-content: center;
-  gap: 1rem; /* Memberikan jarak antar ikon */
-  flex-wrap: wrap; /* Agar ikon bisa pindah baris ketika terlalu kecil */
-  margin-bottom: 1rem; /* Memberikan jarak antara ikon sosial dan teks copyright */
+  flex-direction: row; /* Susun elemen secara horizontal */
+  justify-content: center; /* Pusatkan elemen */
 }
 
-/* Ukuran ikon sosial media */
-footer a img {
-  width: 30px;
-  height: 30px;
+footer a {
+  margin: 0 10px; /* Tambahkan margin horizontal antar ikon */
 }
 
-footer .text-sm {
-  font-size: 0.875rem; /* Mengubah ukuran font agar lebih kecil di mobile */
+footer img {
+  width: 40px; /* Ukuran default untuk ikon */
+  height: 40px; /* Ukuran default untuk ikon */
+  transition: transform 0.3s; /* Transisi saat hover */
 }
 
-/* Responsif untuk layar lebih kecil dari 768px (tablet dan smartphone) */
+footer img:hover {
+  transform: scale(1.1); /* Membesarkan ikon saat hover */
+}
+
+/* Responsivitas untuk layar yang lebih kecil dari 768px */
 @media (max-width: 768px) {
-  footer {
-    padding: 1.5rem 1rem; /* Mengurangi padding footer */
-  }
-
-  footer .flex {
-    gap: 0.8rem; /* Mengurangi jarak antar ikon */
-  }
-
-  footer a img {
-    width: 24px; /* Ukuran ikon lebih kecil */
-    height: 24px; /* Ukuran ikon lebih kecil */
-  }
-
-  footer .text-sm {
-    font-size: 0.75rem; /* Ukuran font copyright lebih kecil */
+  footer img {
+    width: 30px; /* Ukuran lebih kecil untuk perangkat mobile */
+    height: 30px; /* Ukuran lebih kecil untuk perangkat mobile */
   }
 }
 
-/* Responsif untuk layar lebih kecil dari 480px (smartphone kecil) */
+/* Responsivitas untuk layar yang lebih kecil dari 480px */
 @media (max-width: 480px) {
-  footer {
-    padding: 1rem; /* Mengurangi padding footer */
-  }
-
-  footer .flex {
-    gap: 0.5rem; /* Mengurangi jarak antar ikon */
-    justify-content: center; /* Menjaga ikon tetap terpusat */
-  }
-
-  footer a img {
-    width: 20px; /* Ukuran ikon lebih kecil */
-    height: 20px; /* Ukuran ikon lebih kecil */
-  }
-
-  footer .text-sm {
-    font-size: 0.65rem; /* Ukuran font copyright lebih kecil */
+  footer img {
+    width: 25px; /* Ukuran lebih kecil untuk smartphone kecil */
+    height: 25px; /* Ukuran lebih kecil untuk smartphone kecil */
   }
 }
