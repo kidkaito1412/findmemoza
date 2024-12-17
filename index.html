@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+  </head>
+  <body class="bg-background text-foreground">
+    <header class="sticky top-0 z-50 flex flex-wrap justify-between items-center p-6 bg-purple-200">
+      <h1 class="text-3xl font-bold font-Sulphur Point">MY PORTFOLIO</h1>
+      <nav>
+        <ul class="flex flex-wrap space-x-4">
+          <li><a href="#home" class="text-muted hover:text-muted-foreground font-poppins font-bold text-base">Home</a></li>
+          <li><a href="#about" class="text-muted hover:text-muted-foreground font-poppins font-bold text-base">About</a></li>
+          <li><a href="#skills" class="text-muted hover:text-muted-foreground font-poppins font-bold text-base">Skills</a></li>
+          <li><a href="#projects" class="text-muted hover:text-muted-foreground font-poppins font-bold text-base">Projects</a></li>
+          <li><a href="#contact" class="text-muted hover:text-muted-foreground font-poppins font-bold text-base">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home" class="flex flex-col items-center justify-center h-screen text-center px-4 bg-white">
+      <div class="flex items-center">
+        <div>
+          <h2 class="text-5xl font-bold">Hi There</h2>
+          <h3 class="text-4xl font-semibold">I'm <span class="text-blue-600">Moza Dwi Maheswari</span></h3>
+          <br>
+          <br>
+          <p class="text-2xl">Front-End Developer</p>
+        </div>
+        <img src="Picture/user_work.png" alt="Woman" class="h-48 w-48 ml-4" />
+      </div>
+      <button class="mt-4 bg-secondary text-secondary-foreground hover:bg-secondary/80 px-6 py-3 rounded">Swipe Up</button>
+    </section>
+    <section id="about" class="py-20 px-6 bg-purple-100">
+      <div class="flex items-center justify-center">
+        <img src="Picture/user.png" alt="Woman" class="h-48 w-48 mr-4" />
+        <div>
+          <h2 class="text-4xl font-bold text-center">ABOUT ME</h2>
+          <p class="mt-4 text-muted-foreground text-lg">
+            I'm a skilled Front-End Developer with 2 years of experience and a graduate in informatics Engineering from Diponegoro University. I have hands-on experience in web development, proficient in
+            HTML, CSS, JavaScript, and frameworks like React and Vue.js. My focus is on creating responsive user interfaces and optimizing user experiences.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="py-20 px-6 bg-purple-200">
+      <h2 class="text-4xl font-bold text-center">SKILLS</h2>
+      <div class="flex flex-wrap justify-center space-x-4 mt-4">
+        <img src="Skill/Adobe ilustrator.png" alt="Adobe Illustrator" class="h-12" />
+        <img src="Skill/Tailwind.png" alt="Tailwind CSS" class="h-12" />
+        <img src="Skill/Bootstrap.png" alt="Bootstrap" class="h-12" />
+        <img src="Skill/github.png" alt="GitHub" class="h-12" />
+        <img src="Skill/HTML.png" alt="HTML" class="h-12" />
+        <img src="Skill/Javascript.png" alt="JavaScript" class="h-12" />
+        <img src="Skill/Adobe photoshop.png" alt="Photoshop" class="h-12" />
+        <img src="Skill/Figma.png" alt="Figma" class="h-12" />
+        <img src="Skill/Visual studio code.png" alt="Visual Studio" class="h-12" />
+        <img src="Skill/CSS.png" alt="CSS" class="h-12" />
+      </div>
+    </section>
+    <section id="projects" class="py-20 px-6 bg-purple-100">
+      <h2 class="text-4xl font-bold text-center">PROJECTS</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+        <img src="Picture/Classified App - Mobile UI.jpg" alt="Project 1" class="rounded-lg w-full h-auto" />
+        <img src="Picture/E-Learning App I Ofspace.jpg" alt="Project 2" class="rounded-lg w-full h-auto" />
+        <img src="Picture/Travel App Exploration.jpg" alt="Project 3" class="rounded-lg w-full h-auto" />
+        <img src="Picture/Travel App.jpg" alt="Project 4" class="rounded-lg w-full h-auto" />
+      </div>
+    </section>
+    <footer id="contact" class="py-6 bg-purple-200 text-center">
+      <div class="flex justify-center space-x-4 mt-2">
+        <a href="#" class="text-muted hover:text-muted-foreground">
+          <img src="Sosmed/vs 2.png" alt="LinkedIn" class="h-6 w-6">
+        </a>
+        <a href="#" class="text-muted hover:text-muted-foreground">
+          <img src="Sosmed/vs 1.png" alt="Discord" class="h-6 w-6">
+        </a>
+        <a href="#" class="text-muted hover:text-muted-foreground">
+          <img src="Sosmed/vs 4.png" alt="Instagram" class="h-7 w-7">
+        </a>
+        <a href="#" class="text-muted hover:text-muted-foreground">
+          <img src="Sosmed/vs 3.png" alt="WhatsApp" class="h-6 w-6">
+        </a>
+      </div>
+      <p class="text-lg">© 2024 Moza Dwi Maheswari. All Rights Reserved</p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
